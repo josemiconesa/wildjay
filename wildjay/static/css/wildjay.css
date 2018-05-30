@@ -51,13 +51,3 @@ nav, .dropdown-content {
 .container .dropdown-content {
 	top: 0px !important;
 }
-
-img.image-rrss-large {
-    height: 75px;
-    width: 75px;
-}
-
-img {
-    height: 15px !important;
-    width: 15px !important;
-}
