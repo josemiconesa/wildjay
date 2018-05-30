@@ -1,0 +1,49 @@
+{% extends "wildjay/plantilla.html" %}
+{% load static %}
+
+{% block titulo %}
+    Vendidos
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            {% for producto in productos %}
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="materialboxed" src="{{ producto.imagen.url }}" />
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">
+                                {{ producto.nombre }}<i class="material-icons right">add</i>
+                                <div class="divider"></div>
+                            </span>
+                            <p>Precio: <strike>{{ producto.precio }}€</strike></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">
+                                {{ producto.nombre }}<i class="material-icons right">close</i>
+                                <div class="divider"></div>
+                            </span>
+                            <p>{{ producto.descripcion }}</p>
+                            <div class="divider"></div>
+                            <p><b>Precio</b>: <strike>{{ producto.precio }}€</strike></p>
+                            <p><b>Talla</b>: <strike>{{ producto.talla }}</strike></p>
+                            <div class="divider"></div>
+                            <span style="right: 5px; left: 25px; vertical-align: bottom; bottom: 20px; position: absolute; font-size: x-small;">
+                                Sin stock. Para cualquier encargo contacta con nosotros usando el <a href="{% url 'pedido:index' %}">formulario de contacto </a>
+                                o con un mensaje en cualquiera de nuestras <a href="/pedidos/#rrss">redes sociales</a>.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.materialboxed').materialbox();
+        });
+    </script>
+{% endblock %}

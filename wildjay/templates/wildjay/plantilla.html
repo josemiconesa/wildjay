@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WildJay - {% block titulo %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/png" href="{% static "img/favicon.PNG" %}"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" href="{% static "css/materialize.min.css" %}" />
+	<link rel="stylesheet" href="{% static "css/wildjay.css" %}" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<header>
+    {% block menu %}
+        {% include "wildjay/header.html" %}
+    {% endblock %}
+</header>
+<main>
+
+    {% block content %}
+    {% endblock %}
+
+</main>
+<footer>
+    {% block footer %}
+        {% include "wildjay/footer.html" %}
+    {% endblock %}
+</footer>
+</body>
+</html>

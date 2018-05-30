@@ -1,0 +1,63 @@
+html {
+	background-color: #ede7f6;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+nav {
+	background-color: #7e57c2;
+}
+
+nav .nav-wrapper {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 80px;
+    line-height: 80px;
+}
+
+.ui-growl {
+    top: 80px;
+}
+
+.page-footer {
+    padding-top: 0px;
+    background-color: #9e9e9e;
+    color: white;
+}
+
+.page-footer .footer-copyright {
+	background-color: #757575 ;
+}
+
+.page-footer .container .row {
+    margin-bottom: 0px;
+}
+
+nav, .dropdown-content {
+	top: 78px !important;
+}
+
+.container .dropdown-content {
+	top: 0px !important;
+}
+
+img.image-rrss-large {
+    height: 75px;
+    width: 75px;
+}
+
+img {
+    height: 15px !important;
+    width: 15px !important;
+}

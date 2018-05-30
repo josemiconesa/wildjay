@@ -1,0 +1,70 @@
+{% extends "wildjay/plantilla.html" %}
+{% load static %}
+
+{% block titulo %}
+    Inicio
+{% endblock %}
+
+{% block content %}
+    <div class="section">
+      <div class="row container">
+        <h3 class="header">Presentación.</h3>
+        <p class="grey-text text-darken-3 lighten-3">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat.
+        </p>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static "img/girl.jpg" %}"></div>
+    </div>
+    <div class="section">
+      <div class="row container">
+        <h3 class="header">Info.</h3>
+        <p class="grey-text text-darken-3 lighten-3">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+            Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat.
+        </p>
+       </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="{% static "img/eye.jpg" %}"></div>
+    </div>
+    <div class="section">
+      <div class="row container">
+          <br/>
+          <div class="col s12">
+              <div class="col s6 m3 center">
+                  <a href="https://www.instagram.com/wildjaycustomshop/"><img src="{% static "img/ig.png" %}" alt="Instagram" style="height: 75px; width: 75px;"/></a>
+              </div>
+              <div class="col s6 m3 center">
+                  <a href="#"><img src="{% static "img/mail.png" %}" alt="email" style="height: 75px; width: 75px;"/></a>
+              </div>
+              <div class="col s6 m3 center">
+                  <a href="#"><img src="{% static "img/tw.png" %}" alt="twitter" style="height: 75px; width: 75px;"/></a>
+              </div>
+              <div class="col s6 m3 center">
+                  <a href="#"><img src="{% static "img/fb.png" %}" alt="facebook" style="height: 75px; width: 75px;"/></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+        $('.parallax').parallax();
+    });
+
+    </script>
+{% endblock %}
